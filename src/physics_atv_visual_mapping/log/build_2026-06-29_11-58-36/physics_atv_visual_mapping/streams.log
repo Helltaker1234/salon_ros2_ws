@@ -1,0 +1,98 @@
+[0.010s] Invoking command in '/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ljh/salon_ros2_ws/install/pcl_z_filter:/opt/ros/humble /usr/bin/cmake /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping
+[0.168s] -- The C compiler identification is GNU 11.4.0
+[0.629s] -- The CXX compiler identification is GNU 11.4.0
+[0.953s] -- Detecting C compiler ABI info
+[1.079s] -- Detecting C compiler ABI info - done
+[1.083s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.084s] -- Detecting C compile features
+[1.085s] -- Detecting C compile features - done
+[1.088s] -- Detecting CXX compiler ABI info
+[1.221s] -- Detecting CXX compiler ABI info - done
+[1.226s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.226s] -- Detecting CXX compile features
+[1.227s] -- Detecting CXX compile features - done
+[1.235s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.342s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.384s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.502s] -- Configuring done
+[1.509s] -- Generating done
+[1.511s] -- Build files have been written to: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping
+[1.515s] Invoked command in '/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ljh/salon_ros2_ws/install/pcl_z_filter:/opt/ros/humble /usr/bin/cmake /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping
+[1.517s] Invoking command in '/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ljh/salon_ros2_ws/install/pcl_z_filter:/opt/ros/humble /usr/bin/cmake --build /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping -- -j12 -l12
+[1.560s] Built target ament_cmake_python_symlink_physics_atv_visual_mapping
+[1.703s] running egg_info
+[1.703s] creating physics_atv_visual_mapping.egg-info
+[1.704s] writing physics_atv_visual_mapping.egg-info/PKG-INFO
+[1.704s] writing dependency_links to physics_atv_visual_mapping.egg-info/dependency_links.txt
+[1.704s] writing top-level names to physics_atv_visual_mapping.egg-info/top_level.txt
+[1.704s] writing manifest file 'physics_atv_visual_mapping.egg-info/SOURCES.txt'
+[1.706s] reading manifest file 'physics_atv_visual_mapping.egg-info/SOURCES.txt'
+[1.706s] writing manifest file 'physics_atv_visual_mapping.egg-info/SOURCES.txt'
+[1.723s] Built target ament_cmake_python_build_physics_atv_visual_mapping_egg
+[1.731s] Invoked command in '/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ljh/salon_ros2_ws/install/pcl_z_filter:/opt/ros/humble /usr/bin/cmake --build /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping -- -j12 -l12
+[1.739s] Invoking command in '/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ljh/salon_ros2_ws/install/pcl_z_filter:/opt/ros/humble /usr/bin/cmake --install /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping
+[1.744s] -- Install configuration: ""
+[1.745s] -- Execute custom install script
+[1.746s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/share/physics_atv_visual_mapping/environment/pythonpath.sh
+[1.753s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/share/physics_atv_visual_mapping/environment/pythonpath.dsv
+[1.761s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping-0.0.0-py3.10.egg-info/PKG-INFO
+[1.767s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.773s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.779s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping-0.0.0-py3.10.egg-info/top_level.txt
+[1.787s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/__init__.py
+[1.793s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/__init__.py:Zone.Identifier
+[1.800s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/geometry_utils.py
+[1.805s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/geometry_utils.py:Zone.Identifier
+[1.811s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/__init__.py
+[1.817s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/__init__.py:Zone.Identifier
+[1.823s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/anyloc_utils.py
+[1.828s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/anyloc_utils.py:Zone.Identifier
+[1.835s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/image_pipeline.py
+[1.841s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/image_pipeline.py:Zone.Identifier
+[1.847s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/__init__.py
+[1.853s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/__init__.py:Zone.Identifier
+[1.859s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/base.py
+[1.865s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/base.py:Zone.Identifier
+[1.871s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/dino.py
+[1.876s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/dino.py:Zone.Identifier
+[1.882s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/distilled_model.py
+[1.887s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/distilled_model.py:Zone.Identifier
+[1.893s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/featup.py
+[1.899s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/featup.py:Zone.Identifier
+[1.904s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/ganav.py
+[1.910s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/ganav.py:Zone.Identifier
+[1.916s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/identity.py
+[1.923s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/identity.py:Zone.Identifier
+[1.929s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/pca.py
+[1.936s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/pca.py:Zone.Identifier
+[1.942s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/pca_vlad.py
+[1.948s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/pca_vlad.py:Zone.Identifier
+[1.954s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/radio.py
+[1.960s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/radio.py:Zone.Identifier
+[1.966s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/sam.py
+[1.972s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/sam.py:Zone.Identifier
+[1.977s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/vlad.py
+[1.983s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/processing_blocks/vlad.py:Zone.Identifier
+[1.989s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/sam_extractor.py
+[1.995s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/image_processing/sam_extractor.py:Zone.Identifier
+[2.001s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/localmapping/__init__.py
+[2.006s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/localmapping/__init__.py:Zone.Identifier
+[2.012s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/localmapping/localmapping.py
+[2.017s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/localmapping/localmapping.py:Zone.Identifier
+[2.024s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/pointcloud_colorization/__init__.py
+[2.032s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/pointcloud_colorization/__init__.py:Zone.Identifier
+[2.039s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/pointcloud_colorization/torch_color_pcl_utils.py
+[2.045s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/pointcloud_colorization/torch_color_pcl_utils.py:Zone.Identifier
+[2.050s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/utils.py
+[2.056s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/local/lib/python3.10/dist-packages/physics_atv_visual_mapping/utils.py:Zone.Identifier
+[2.063s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/lib/physics_atv_visual_mapping/dino_localmapping.py
+[2.069s] -- Symlinking: /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/install/physics_atv_visual_mapping/lib/physics_atv_visual_mapping/cloud_repub.py
+[2.074s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:209 (message):
+[2.074s]   ament_cmake_symlink_install_programs() can't find
+[2.074s]   '/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/scripts/dino_vlad_image_click_node.py'
+[2.074s] Call Stack (most recent call first):
+[2.075s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:331 (ament_cmake_symlink_install_programs)
+[2.075s]   cmake_install.cmake:46 (include)
+[2.075s] 
+[2.075s] [0m
+[2.076s] Invoked command in '/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ljh/salon_ros2_ws/install/pcl_z_filter:/opt/ros/humble /usr/bin/cmake --install /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping

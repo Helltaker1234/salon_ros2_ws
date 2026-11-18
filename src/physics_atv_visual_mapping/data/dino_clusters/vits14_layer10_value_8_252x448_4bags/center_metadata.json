@@ -1,0 +1,18 @@
+{
+  "model": "dinov2_vits14",
+  "layer": 10,
+  "facet": "value",
+  "input_width": 448,
+  "input_height": 252,
+  "feature_grid_width": 32,
+  "feature_grid_height": 18,
+  "clusters": 8,
+  "descriptor_dim": 384,
+  "images_found": 1000,
+  "decode_failures": 0,
+  "descriptors_extracted": 576000,
+  "descriptors_sampled_before_final_limit": 200000,
+  "descriptors_used": 200000,
+  "seed": 0,
+  "source_image_dir": "/home/zenith/salon_ros2_ws/data/vits_center_images_4bags"
+}

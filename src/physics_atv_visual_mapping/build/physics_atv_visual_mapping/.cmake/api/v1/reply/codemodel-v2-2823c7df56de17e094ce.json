@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f163f0451bc0aa7fb6a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "physics_atv_visual_mapping",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_physics_atv_visual_mapping_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_physics_atv_visual_mapping_egg-6a473d48a8b7975cfd69.json",
+					"name" : "ament_cmake_python_build_physics_atv_visual_mapping_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_physics_atv_visual_mapping::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_physics_atv_visual_mapping-877eb1dc38e7a2531df1.json",
+					"name" : "ament_cmake_python_symlink_physics_atv_visual_mapping",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "physics_atv_visual_mapping_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-physics_atv_visual_mapping_uninstall-43c9f2d893395a47d486.json",
+					"name" : "physics_atv_visual_mapping_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8e2570036ffb921dbf2b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping",
+		"source" : "/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

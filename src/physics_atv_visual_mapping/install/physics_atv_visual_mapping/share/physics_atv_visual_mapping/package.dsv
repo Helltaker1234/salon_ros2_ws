@@ -1,0 +1,5 @@
+source;share/physics_atv_visual_mapping/local_setup.bash
+source;share/physics_atv_visual_mapping/local_setup.dsv
+source;share/physics_atv_visual_mapping/local_setup.ps1
+source;share/physics_atv_visual_mapping/local_setup.sh
+source;share/physics_atv_visual_mapping/local_setup.zsh

@@ -1,0 +1,46 @@
+import os
+import torch
+from ament_index_python.packages import get_package_share_directory
+
+from physics_atv_visual_mapping.image_processing.anyloc_utils import DinoV2ExtractFeatures
+from physics_atv_visual_mapping.image_processing.processing_blocks.base import ImageProcessingBlock
+
+class Dinov2Block(ImageProcessingBlock):
+    """
+    Image processing block that runs dino on the image
+    """
+    def __init__(
+            self,
+            dino_type,
+            dino_layer,
+            image_insize,
+            desc_facet,
+            device,
+            use_fp16=False):
+        dino_dir = os.path.expanduser("~/.cache/torch/hub")
+
+        self.dino = DinoV2ExtractFeatures(dino_dir,
+            dino_model=dino_type,
+            layer=dino_layer,
+            input_size=image_insize,
+            facet=desc_facet,
+            device=device,
+            use_fp16=use_fp16,
+        )
+
+    def run(self, image, intrinsics, image_orig):
+        # The DINO model may run in native FP16, but VLAD remains FP32.
+        img_out = self.dino(image).float()
+
+        ix = image.shape[3]
+        dx = img_out.shape[3]
+        iy = image.shape[2]
+        dy = img_out.shape[2]
+
+        intrinsics[:, 0, 0] *= (dx/ix)
+        intrinsics[:, 0, 2] *= (dx/ix)
+
+        intrinsics[:, 1, 1] *= (dy/iy)
+        intrinsics[:, 1, 2] *= (dy/iy)
+
+        return img_out, intrinsics

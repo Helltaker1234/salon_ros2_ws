@@ -1,0 +1,6 @@
+[0.028s] Invoking command in '/home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping -- -j6 -l6
+[0.070s] CMake Error: The current CMakeCache.txt directory /home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping/CMakeCache.txt is different than the directory /home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.121s] CMake Error: The source directory "/home/ljh/salon_ros2_ws/src/physics_atv_visual_mapping" does not exist.
+[0.122s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.125s] gmake: *** [Makefile:254: cmake_check_build_system] Error 1
+[0.130s] Invoked command in '/home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping -- -j6 -l6

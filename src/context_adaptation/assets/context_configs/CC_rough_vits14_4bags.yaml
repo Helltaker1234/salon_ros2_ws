@@ -1,0 +1,69 @@
+---
+ROBOT:
+  frame_height: 0.55
+  front_x: 0.25
+  back_x: -0.60
+  width: 0.32
+# ROBOT:
+#   frame_height: 0.78
+#   front_x: 0.30
+#   back_x: -0.50
+#   width: 0.40
+VLAD:
+  n_clusters: 8
+  cache_dir: 'dino_clusters/vits14_layer10_value_8_252x448_4bags'
+  model: "dinov2_vits14"
+  desc_layer: 10
+ONLINE_CLUSTERING:
+  cluster_similarity_threshold: .65
+  subcluster_similarity_threshold: .5
+  pair_similarity_maximum: 1.0
+BEHAVIOR:
+  # Current MPPI has w_speed=0.0, so skip the entire speed GP/map pipeline.
+  # Set true and restart online_hdif to restore /shortrange_speedmap.
+  enable_speedmap: false
+  mode_filter_size: 10
+  buffer_size: 200
+  speed_init: 1.5
+  max_cost: .32
+  max_velocity: 2
+  velocity_margin: .3
+  adaptation_factor: .001
+  speed_cap: 5.5
+  weighted_avg_speed: False
+
+  # ViT-S/14, layer 10, value facet, 252x448, four-bag centers.
+  # p99(all channels)=18.8145 and p95(pixel minimum)=14.8435.
+  residual_max: 19.0
+  uncertainty_threshold: .90
+
+  buffer_update_freq: 2
+  cost_lengthscale: 2.0
+  speed_lengthscale: 1.5
+  train_kernel: False
+  costmap_cvar: .03
+  unknown_cost: 0.5
+  unknown_speed: 1.0
+  maxpool_speedmap: True
+GP_OPT:
+  fast_predict: true
+  pred_chunk_size: 8192
+  triangular_variance: true
+  min_variance: 1.0e-6
+  jitter: 1.0e-5
+  fallback_to_gpytorch: true
+MISC:
+  update_freq: 5
+  image_size: 224
+
+PROFILE:
+  # Short diagnostic mode. Use cuda_sync=false for a lower-overhead rate test.
+  enable: false
+  period: 10
+  warn_ms: 150.0
+  cuda_sync: false
+  topk: 10
+  gridmap_detail: false
+  ema_alpha: 0.10
+  hz_window: 30
+  quiet_console: true

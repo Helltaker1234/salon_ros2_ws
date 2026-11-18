@@ -1,0 +1,2 @@
+Invoking command in '/home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping -- -j6 -l6
+Invoked command in '/home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zenith/salon_ros2_ws/src/physics_atv_visual_mapping/build/physics_atv_visual_mapping -- -j6 -l6
