@@ -11,6 +11,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/dino_costmap_gp_speed_input_output.py
   scripts/cost_publisher.py
+  scripts/quadruped_cost_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
