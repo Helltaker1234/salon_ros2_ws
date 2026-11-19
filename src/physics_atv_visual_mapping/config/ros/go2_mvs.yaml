@@ -1,0 +1,95 @@
+image:
+    image_topic: /left_camera/image  # MVS left camera (ws_mvs/config/left_camera_trigger.yaml)
+    image_compressed: False
+
+sync:
+    process_hz: 10.0
+    input_reliability: best_effort  # generic live sensors; run_demo overrides to reliable for this bag
+    cache_size: 10
+    max_image_dt: 0.08
+    max_odom_dt: 0.02  # reject a missing/stale 100ms odometry frame
+    wait_for_pair_s: 0.05  # bounded wall-time wait for matching sensor callbacks
+
+pointcloud:
+    topic: /livox/lidar_filtered #/cloud_registered_local
+    frame: aft_mapped
+
+odometry:
+    topic: /aft_mapped_to_init
+
+gridmap:
+    topic: local_gridmap
+
+# TODO: 아래 intrinsics/extrinsics는 D435 값임. MVS 카메라 보정값으로 교체 필요 (image_scale 0.5 반영)
+intrinsics:
+    K: [454.6972351074219, 0., 325.50006103515625, 0., 454.3711853027344, 185.2296600341797, 0., 0., 1.]
+    P: [454.6972351074219, 0., 325.50006103515625, 0., 454.3711853027344, 185.2296600341797, 0., 0., 1.]
+
+extrinsics:
+# Zero
+    p: [0.03609, 0.06487, 0.00196]
+    q: [0.5267086273617297, -0.531647724181245, 0.4703050177041864, 0.4676985242203467]
+    # Super-LIO publishes deskewed IMU/body-frame points. Calibration p/q above
+    # expect LiDAR points: T_lidar_body = inverse(T_body_lidar) from salon_260811.
+    # Remove this composition when feeding raw LiDAR-frame points (old zf).
+    input_to_calibration:
+        p: [-0.04165, -0.02326, 0.0284]
+        q: [0.0, 0.0, 0.0, 1.0]
+# Rough
+    # p: [0.03609, 0.06487, 0.00196]
+    # q: [0.48952, -0.49251, 0.50911, 0.50853] #xyzw
+image_processing:
+    -
+        type: dino
+        args:
+            dino_type: dinov2_vits14
+            dino_layer: 10
+            # Width and height. Both values are exact multiples of 14.
+            image_insize: [448, 252]
+            desc_facet: value
+
+    -
+        type: vlad
+        args:
+            n_clusters: 8
+            cache_dir: /home/zenith/salon_ros2_ws/install/physics_atv_visual_mapping/share/physics_atv_visual_mapping/data/dino_clusters/vits14_layer10_value_8_252x448_4bags
+
+localmapping:
+    layer_key: VLAD
+    ema: 0.20
+    metadata:
+       origin: [-20., -20.]
+       length_x: 40.
+       length_y: 40.
+       resolution: 0.1999
+
+slope:
+    enable: false
+
+device: cuda
+viz: False
+
+PROFILE:
+    # Short diagnostic mode. cuda_sync gives accurate GPU-stage timings but
+    # lowers throughput slightly; set it false after locating the bottleneck.
+    enable: false
+    period: 10
+    warn_ms: 250.0
+    cuda_sync: false
+    topk: 10
+    ema_alpha: 0.10
+    hz_window: 30
+
+PERFORMANCE:
+    use_amp: true
+    publish_dino_pcl: true
+    publish_dino_image: true
+    publish_rgb_viz: true
+    log_frame_timing: false
+    pcl_viz_stride: 4
+
+click_vlad:
+    # Average a 3x3 patch in the 23x12 VLAD feature grid.
+    radius_feat: 1
+    display_scale: 1.0
+    residual_max: 19.0
