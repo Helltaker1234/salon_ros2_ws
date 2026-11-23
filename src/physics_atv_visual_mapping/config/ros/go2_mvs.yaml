@@ -12,18 +12,22 @@ sync:
 
 pointcloud:
     topic: /livox/lidar_filtered #/cloud_registered_local
-    frame: aft_mapped
+    frame: imu
 
 odometry:
-    topic: /aft_mapped_to_init
+    topic: /lio/odom
 
 gridmap:
     topic: local_gridmap
 
-# TODO: 아래 intrinsics/extrinsics는 D435 값임. MVS 카메라 보정값으로 교체 필요 (image_scale 0.5 반영)
+# Hardware: MV-CU013-A0UMUC, 1280x1024 full frame, lens MVL-HF0628M-6MPE (6mm, C-mount).
+# ws_mvs left_camera_trigger.yaml uses image_scale: 0.5, so the published image is 640x512.
+# Nominal pinhole intrinsics below are from f=6mm and the 4.8um pixel pitch:
+#   fx=fy=6mm/0.0048mm=1250 px; image_scale=0.5 => 625 px.
+# These are NOT an optical calibration. Run lidar-camera calibration and replace K/P.
 intrinsics:
-    K: [454.6972351074219, 0., 325.50006103515625, 0., 454.3711853027344, 185.2296600341797, 0., 0., 1.]
-    P: [454.6972351074219, 0., 325.50006103515625, 0., 454.3711853027344, 185.2296600341797, 0., 0., 1.]
+    K: [625.0, 0., 320.0, 0., 625.0, 256.0, 0., 0., 1.]  # nominal for 640x512
+    P: [625.0, 0., 320.0, 0., 625.0, 256.0, 0., 0., 1.]  # nominal for 640x512; use when topic contains "rect"
 
 extrinsics:
 # Zero

@@ -51,5 +51,5 @@ def generate_launch_description():
         visual_mapping_config_arg,
         reliability_arg,
         visual_mapping_node,
-        lidar_stitching_node,
+        # lidar_stitching_node,  # 2026-11-20 주석: Go2엔 Velodyne 없음, /livox/lidar 를 PointCloud2 로 구독해 형식 충돌 → rosbag 녹화 막힘
     ])
